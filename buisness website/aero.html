@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+              .hero-container {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT IMAGE */
+.hero-image {
+  flex: 1;
+  background-image: url('./aer.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* DIAGONAL CUT */
+.hero-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -80px;
+  width: 160px;
+  height: 100%;
+  background: white;
+  transform: skewX(-15deg);
+}
+
+/* RIGHT CONTENT */
+.hero-content {
+  flex: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.hero-content h1 {
+    padding: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1f2f5c;
+}
+
+.hero-content span {
+  color: #1f2f5c;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img href="website.html"src="./Group-82.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About us</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Industries
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Aerospace and Defence</a></li>
+            <li><a class="dropdown-item" href="#">Banking and Financial Service</a></li>
+            <li><a class="dropdown-item" href="#">Healthcare</a></li>
+            <li><a class="dropdown-item" href="#">Insurance</a></li>
+            <li><a class="dropdown-item" href="#">Locomotive</a></li>
+            <li><a class="dropdown-item" href="#">Industrial</a></li>
+            <li><a class="dropdown-item" href="#">Mobility</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Insights</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cloud Services</a></li>
+            <li><a class="dropdown-item" href="#">CybeSecurity</a></li>
+            <li><a class="dropdown-item" href="#">Data Engineering</a></li>
+            <li><a class="dropdown-item" href="#">DevOps</a></li>
+            <li><a class="dropdown-item" href="#">GIS</a></li>
+            <li><a class="dropdown-item" href="#">Consulting</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p class="d-inline-flex gap-1">
+  <button style="display: flex; margin-right: 20px;" type="button" class="btn btn-primary" onclick="window.location.href='contact.html'">Contact</button>
+  </p>
+</nav>
+
+
+
+<div class="hero-container">
+
+  
+  <div class="hero-image"></div>
+
+  
+  <div class="hero-content">
+    <h1>
+    Aerospace 
+    </h1>
+  </div>
+
+</div>
+<footer style="background-color:#2e2e2e; color:#ffffff; padding:40px 0; font-family:Arial, sans-serif;">
+  
+  <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between;">
+
+    
+    <div style="flex:1; min-width:250px; padding:20px;">
+      <img src="./Group-82.png" alt="Company Logo" style="width:150px; margin-bottom:15px;">
+      <p style="font-size:14px; line-height:1.6; color:#cccccc;">
+        We are a technology-driven company delivering innovative digital solutions 
+        to help businesses grow and succeed.
+      </p>
+    </div>
+
+    
+    <div style="flex:1; min-width:200px; padding:20px;">
+      <h3 style="font-size:18px; margin-bottom:15px;">Quick Links</h3>
+      <ul style="list-style:none; padding:0; line-height:2;">
+        <li><a href="website.html" style="color:#cccccc; text-decoration:none;">Home</a></li>
+        <li><a href="#" style="color:#cccccc; text-decoration:none;">About Us</a></li>
+        <li><a href="#" style="color:#cccccc; text-decoration:none;">Services</a></li>
+        <li><a href="#" style="color:#cccccc; text-decoration:none;">Contact</a></li>
+      </ul>
+    </div>
+
+    
+    <div style="flex:1; min-width:250px; padding:20px;">
+      <h3 style="font-size:18px; margin-bottom:15px;">Contact Us</h3>
+      <p style="font-size:14px; color:#cccccc;">📍 Kochi, Kerala, India</p>
+      <p style="font-size:14px; color:#cccccc;">📞 +91 98765 43210</p>
+      <p style="font-size:14px; color:#cccccc;">✉️ info@company.com</p>
+    </div>
+
+  </div>
+
+  
+  <div style="border-top:1px solid #444; margin-top:30px; padding-top:15px; text-align:center;">
+    <p style="font-size:13px; color:#aaaaaa;">
+      © 2025 Your Company Name. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

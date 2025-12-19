@@ -1,0 +1,43 @@
+.container-fluid
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    gap: 500px;
+    align-items:end;
+}
+
+ /* Control the overall carousel size  */
+#carouselExampleCaptions {
+    max-width: 2000px;  
+    margin: 0 auto;    }
+
+/* Control carousel image height */
+#carouselExampleCaptions .carousel-item img {
+    height: 400px;     
+    object-fit: cover;}
+
+/* Control carousel indicator dots size */
+#carouselExampleCaptions .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Control navigation arrow buttons size */
+#carouselExampleCaptions .carousel-control-prev,
+#carouselExampleCaptions .carousel-control-next {
+    width: 50px;
+}
+
+.icon-img {
+  width: 50px;       /* icon size */
+  height: 50px;
+  padding-top: 16px; /* optional spacing above icon */
+}
+
+.card.border-0 {
+  background: transparent; /* optional if you want no card background */
+}
+
